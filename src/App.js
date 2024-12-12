@@ -36,6 +36,7 @@ const App = () => {
     setBill("");
     setYourExpanse("");
     setIselect(null);
+    setWhoPay("user");
   }
 
   function deleteFriend(id){
@@ -48,7 +49,7 @@ const App = () => {
     setFriend((friends) => friends.map((friend) => friend.id === isSelect.id ? {...friend,balance:0} : friend));
     setIselect(null);
     setBill("");
-    setYourExpanse("");
+    setYourExpanse(""); 
    }
 
   return (
